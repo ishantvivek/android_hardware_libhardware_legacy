@@ -140,6 +140,11 @@ const char *get_dhcp_error_string();
 const char *wifi_get_fw_path(int fw_type);
 
 /**
+* Set the wifi mode (0 = normal, 1 = ap)
+ */
+int wifi_set_mode(int mode);
+
+/**
  * Change the path to firmware for the wlan driver
  */
 int wifi_change_fw_path(const char *fwpath);
